@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/infoCard"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/WelcomeText"
+                android:text="Hi"
+                android:textSize="40sp"
+
+                android:textColor="#2962FF"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="I'm your lecture assistant"
+                android:id="@+id/introText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/WelcomeText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoNumber"
+        android:text=" 1."
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Instruction"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/infoNumber"
+        android:layout_toEndOf="@+id/infoNumber"
+        android:textColorLink="#00C853"
+        android:textIsSelectable="false" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

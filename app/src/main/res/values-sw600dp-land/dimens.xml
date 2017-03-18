@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_padding">280dp</dimen>
+    <dimen name="FAB_bottom_margin">68dp</dimen>
+    <dimen name="toolbar_padding">0dp</dimen>
+</resources>

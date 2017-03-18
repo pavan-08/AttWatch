@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_indigo">#3F51B5</color>
+    <color name="material_indigo_300">#7986CB</color>
+    <color name="material_indigo_400">#5C6BC0</color>
+    <color name="material_indigo_700">#303F9F</color>
+    <color name="material_indigo_50">#E8EAF6</color>
+    <color name="material_green">#4CAF50</color>
+    <color name="material_orange">#FF9800</color>
+    <color name="material_red">#F44336</color>
+    <color name="highlight">#1f000000</color>
+    <color name="indigo_highlight">#4b3f51b5</color>
+    <color name="accent">#00C853</color>
+    <color name="white">#ffffff</color>
+    <color name="noShadow">#00000000</color>
+</resources>

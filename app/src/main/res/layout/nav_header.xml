@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nav_width"
+    android:layout_height="190dp"
+    android:background="@drawable/bm_material_nav_small">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="@dimen/status_bar_height"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/bm_title_text"/>
+</RelativeLayout>

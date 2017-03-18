@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupFeatures"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/getStarted"
+            android:checked="false"
+            android:title="Get Started" />
+
+        <item
+            android:id="@+id/subjects"
+            android:checked="false"
+            android:title="Subjects" />
+
+        <item
+            android:id="@+id/timeTable"
+            android:checked="false"
+            android:title="Time Table" />
+
+        <item
+            android:id="@+id/bunkPlanner"
+            android:checked="false"
+            android:title="@string/title_activity_bunk_planner" />
+
+        <item
+            android:id="@+id/eventPlanner"
+            android:checked="false"
+            android:title="@string/title_activity_event_planner" />
+
+        <item
+            android:id="@+id/bunkPrediction"
+            android:checkable="false"
+            android:title="Attendance Prediction"/>
+
+        <item
+            android:id="@+id/helpAFriend"
+            android:checked="false"
+            android:title="@string/title_activity_help_afriend" />
+    </group>
+    <group
+        android:id="@+id/groupOther"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/notificationSettings"
+            android:checked="false"
+            android:title="@string/title_activity_settings" />
+
+        <!--<item
+            android:id="@+id/rateMe"
+            android:checked="false"
+            android:title="Rate me" />-->
+    </group>
+</menu>

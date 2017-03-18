@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.base">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="AppTheme.base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:actionBarTheme">@style/Theme.AppCompat.Light.DarkActionBar</item>
+        <item name="android:actionModeBackground">@color/material_indigo_300</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:navigationBarColor">#303F9F</item>
+    </style>
+
+    <style name="AppTheme.UserDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--<style name="AppTheme.tablet" parent="AppTheme">
+        <item name="android:windowTranslucentStatus" tools:targetApi="21">true</item>
+    </style>-->
+    <style name="Toolbar" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#fff</item>
+
+    </style>
+
+    <style name="customToolbar" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorSecondary">#fff</item>
+
+    </style>
+
+    <style name="Tab" parent="AppTheme"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

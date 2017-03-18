@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_subject"
+    android:weightSum="1">
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        class="android.support.v7.widget.Toolbar"
+        android:id="@+id/view2"
+        android:background="@color/material_indigo"
+        android:elevation="10dp"
+        app:titleTextAppearance="@style/Toolbar"
+        app:title="Add Subject"
+        android:layout_gravity="center_horizontal" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextWrapper">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:backgroundTint="@color/accent"
+            android:hint="Enter Subject" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2Wrapper">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:inputType="number"
+            android:backgroundTint="@color/accent"
+            android:hint="Enter percent attendance limit" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

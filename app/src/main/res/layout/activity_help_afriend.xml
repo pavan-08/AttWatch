@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.attwatch.activities.HelpAFriend">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_marginTop="@dimen/toolbar_padding"
+            android:layout_width="match_parent"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="@string/title_activity_help_afriend"
+            app:titleTextAppearance="@style/Toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/material_indigo" />
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/material_indigo_50"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingTop="@dimen/toolbar_padding">
+        <RelativeLayout
+            android:id="@+id/help_relative_layout"
+            android:layout_width="match_parent"
+            android:background="@color/material_indigo_50"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/help_logo"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher"/>
+            <ImageView
+                android:id="@+id/help_logo_text"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/help_logo"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/bm_logo_text"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@id/help_logo_text"
+                android:id="@+id/total_lectures_layout"
+                app:hintAnimationEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/total_lectures_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Total lectures"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/attended_lectures_layout"
+                android:layout_width="match_parent"
+                app:hintAnimationEnabled="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_lectures_layout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/attended_lectures_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Lectures attended"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/required_lectures_layout"
+                android:layout_width="match_parent"
+                app:hintAnimationEnabled="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/attended_lectures_layout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/required_lectures_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Attendance requirement (%)"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/help_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/required_lectures_layout"
+                android:text="Calculate"
+                android:elevation="5dp"
+                android:background="@color/material_indigo"
+                android:textColor="@android:color/white"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/help_summary"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_calculate"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="Help a friend to generate their attendance summary."
+                android:layout_marginBottom="16dp"/>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_share" />
+
+</android.support.design.widget.CoordinatorLayout>

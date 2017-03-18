@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".activities.MainActivity">
+
+    <item android:title="Master Reset"
+        android:icon="@mipmap/ic_action_name2"
+        app:showAsAction="always"
+        android:id="@+id/reset"
+        />
+
+</menu>
