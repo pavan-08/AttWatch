@@ -20,4 +20,5 @@
     <string name="title_activity_subject_log">Subject Log</string>
     <string name="title_activity_bunk_planner">Absence Planner</string>
     <string name="title_activity_event_planner">Event Planner</string>
+    <string name="title_activity_attendance_report">Attendance Report</string>
 </resources>

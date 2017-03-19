@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity"
     >
-    <com.attwatch.helpers.CustomDrawerLayout
+    <com.psychapps.attwatch.helpers.CustomDrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -35,7 +35,7 @@
             app:menu="@menu/nav_drawer_items" />
 
 
-    </com.attwatch.helpers.CustomDrawerLayout>
+    </com.psychapps.attwatch.helpers.CustomDrawerLayout>
     <RelativeLayout
         android:id="@+id/findLayout"
         android:paddingLeft="@dimen/content_padding"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/planner_root"
-    tools:context="com.attwatch.activities.BunkPlanner">
+    tools:context="com.psychapps.attwatch.activities.BunkPlanner">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-<com.attwatch.helpers.CustomDrawerLayout
+<com.psychapps.attwatch.helpers.CustomDrawerLayout
     android:id="@+id/drawer_layout"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,6 +20,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:elevation="5dp">
+
                 <android.support.v7.widget.Toolbar
                     android:layout_width="match_parent"
                     android:background="@color/material_indigo"
@@ -30,11 +31,14 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    app:layout_scrollFlags="scroll|enterAlways">
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:paddingLeft="@dimen/abc_action_bar_default_padding_end_material">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:src="@mipmap/bm_title_text"/>
+                        android:src="@mipmap/bm_title_text"
+                        android:id="@+id/imageView"
+                        android:layout_weight="1" />
                 </android.support.v7.widget.Toolbar>
                 <android.support.design.widget.TabLayout
                     android:layout_width="match_parent"
@@ -87,4 +91,4 @@
         app:menu="@menu/nav_drawer_items" />
 
 
-</com.attwatch.helpers.CustomDrawerLayout>
+</com.psychapps.attwatch.helpers.CustomDrawerLayout>

@@ -12,9 +12,9 @@
         android:id="@+id/intro_logo"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/aw_logo"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

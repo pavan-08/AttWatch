@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.attwatch">
+    package="com.psychapps.attwatch">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
@@ -15,24 +15,24 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.attwatch.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" />
 
-        <receiver android:name="com.attwatch.helpers.notify" />
-        <receiver android:name="com.attwatch.helpers.BunkPlanNotifier" />
-        <receiver android:name="com.attwatch.helpers.onBootReceiver">
+        <receiver android:name=".helpers.notify" />
+        <receiver android:name=".helpers.BunkPlanNotifier" />
+        <receiver android:name=".helpers.onBootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name="com.attwatch.activities.Settings"
+            android:name=".activities.Settings"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="com.attwatch.activities.MainActivity">
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.attwatch.activities.MainActivity" />
+                android:value="com.psychapps.attwatch.activities.MainActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.attwatch.activities.IntroScreen"
+            android:name=".activities.IntroScreen"
             android:label="@string/app_name"
             android:screenOrientation="locked"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -52,18 +52,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.attwatch.activities.HelpAFriend"
+            android:name=".activities.HelpAFriend"
             android:label="@string/title_activity_help_afriend"
-            android:parentActivityName="com.attwatch.activities.MainActivity"
+            android:parentActivityName=".activities.MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.attwatch.activities.MainActivity" />
+                android:value="com.psychapps.attwatch.activities.MainActivity" />
         </activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.attwatch.fileprovider"
+            android:authorities="com.psychapps.attwatch.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -72,34 +72,34 @@
         </provider>
 
         <activity
-            android:name="com.attwatch.activities.SubjectLog"
+            android:name=".activities.SubjectLog"
             android:label="@string/title_activity_subject_log"
-            android:parentActivityName="com.attwatch.activities.MainActivity"
+            android:parentActivityName=".activities.MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.attwatch.activities.MainActivity" />
+                android:value="com.psychapps.attwatch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.attwatch.activities.BunkPlanner"
+            android:name=".activities.BunkPlanner"
             android:label="@string/title_activity_bunk_planner"
-            android:parentActivityName="com.attwatch.activities.MainActivity">
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.attwatch.activities.MainActivity" />
+                android:value="com.psychapps.attwatch.activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.attwatch.activities.BunkPlannerDialogue"
+            android:name=".activities.BunkPlannerDialogue"
             android:excludeFromRecents="true"
             android:theme="@style/AppTheme.UserDialog" />
         <activity
-            android:name="com.attwatch.activities.EventPlanner"
+            android:name=".activities.EventPlanner"
             android:label="@string/title_activity_event_planner"
-            android:parentActivityName="com.attwatch.activities.MainActivity"
+            android:parentActivityName=".activities.MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.attwatch.activities.MainActivity" />
+                android:value="com.psychapps.attwatch.activities.MainActivity" />
         </activity>
     </application>
 
